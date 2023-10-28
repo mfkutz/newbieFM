@@ -1,7 +1,17 @@
+import { motion } from "framer-motion";
 function App() {
   return (
     <div className="flex justify-center h-screen items-center ">
-      <main className="wrapper mx-8">
+      <motion.main
+        className="wrapper mx-8"
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{
+          duration: 0.8,
+          delay: 0.5,
+          ease: [0, 0.71, 0.2, 1.01],
+        }}
+      >
         <header>
           <h1>Join our community</h1>
           <h2>30-day, hassle-free money back guarantee</h2>
@@ -34,7 +44,7 @@ function App() {
             </p>
           </div>
         </footer>
-      </main>
+      </motion.main>
     </div>
   );
 }
