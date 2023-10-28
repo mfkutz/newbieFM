@@ -1,0 +1,79 @@
+:root{
+    /* ### Primary */
+--Cyan: hsl(179, 62%, 43%);
+--Bright-Yellow: hsl(71, 73%, 54%);
+/* ### Neutral */
+--Light-Gray: hsl(204, 43%, 93%);
+--Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+body{
+    font-family: 'Karla', sans-serif;
+    background: rgb(230, 239, 246)
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.wrapper{
+    max-width:635px ;
+}
+header {
+    background: rgb(255, 255, 255);
+    padding: 40px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+h1{
+    color: var(--Cyan);
+    font-size: 24px;
+    font-weight: 700;
+}
+h2{
+    color: var(--Bright-Yellow);
+    padding-top: 16px;
+    font-size: 18px;
+    font-weight: 700;
+}
+h3{
+    color:var(--Light-Gray);
+    font-size: 18px;
+
+}
+p{
+    color: var(--Grayish-Blue);
+}
+
+button{
+    background: var(--Bright-Yellow);
+    width: 100%;
+}
+
+.left{
+background: rgb(43, 179, 177);
+padding: 39px 40px 30px 40px;
+border-bottom-left-radius: 8px;
+}
+
+.right{
+    background: rgb(74, 190, 189);
+    padding: 39px 40px 30px 40px;
+    border-bottom-right-radius: 8px;
+}
+
+@media (max-width:1024px){
+    .left{
+        border-bottom-left-radius: 0px;
+        }
+        .right{
+            border-bottom-left-radius: 8px;
+        }
+        
+        
+main{
+    margin-top: 100px;
+}
+        
+}
